@@ -1,5 +1,4 @@
-import slack
-import os
+from slack import WebClient
 from pathlib import Path
 from dotenv import load_dotenv
 from flask import Flask, request, Response
