@@ -13,7 +13,7 @@ slack_event_adapter = SlackEventAdapter(
        os.environ['SLACK_SIGNING_SECRET'], '/slack/events', app)
 
 client = slack.WebClient(token=os.environ['SLACK_BOT_TOKEN'])
-BOT_ID = client.api_call("auth.test")['user_id']
+# BOT_ID = client.api_call("auth.test")['user_id']
 
 
 BAD_WORDS = ['hmm', 'no', 'tim']
