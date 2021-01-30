@@ -1,6 +1,5 @@
 httplib2
 slacker
-Flask==0.12
 astroid          
 certifi           
 chardet           
