@@ -14,9 +14,9 @@ load_dotenv(dotenv_path=env_path)
 
 app = Flask(__name__)
 slack_event_adapter = SlackEventAdapter(
-    os.environ['SLACK_SIGNING_SECRET'], '/slack/events', app)
+    bd1c34b3aea3536d40871dfcfafa585f, '/slack/events', app)
 
-client = slack.WebClient(token=os.environ['SLACK_BOT_TOKEN'])
+client = slack.WebClient(token=xoxb-1666038336759-1692414779330-KYpR0Gn3RVmlehhocLPhl74X)
 BOT_ID = client.api_call("auth.test")['user_id']
 
 
