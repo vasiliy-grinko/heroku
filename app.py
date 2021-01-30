@@ -179,7 +179,8 @@ if __name__ == "__main__":
     schedule_messages(SCHEDULED_MESSAGES)
     ids = list_scheduled_messages('C01BXQNT598')
     delete_scheduled_messages(ids, 'C01BXQNT598')
-    app.run(debug=True)
+    port = int(os.getenv('PORT', 3000))
+    app.run(debug=False, port=port, host='0.0.0.0')
 
 # создали ендпоинт
 # @app.route('/webhook2')
