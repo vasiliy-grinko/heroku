@@ -6,7 +6,7 @@ from flask import make_response
 app = Flask(__name__)
 
 # создали ендпоинт
-@app.route('/webhook')
+@app.route('/webhook2')
 def hello_slack():
     # получили данные из запроса
     request_json = request.get_json(silent=True, force=True)
@@ -15,8 +15,8 @@ def hello_slack():
     ...
     response_body = json.dumps(request_json)
     # упаковали все в корректный респонс
-    response = make_response(response_body)
-    response.headers['Content-Type'] = 'application/json'
+    response = make_response((response_body['challenge']),200)
+    response.headers['Content-Type'] = 'text/plain'
     # и вернули
     return response
 
