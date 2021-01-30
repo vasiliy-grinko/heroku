@@ -9,8 +9,8 @@ from datetime import datetime, timedelta
 import time
 
 
-env_path = Path('.'), / '.env'
-load_dotenv(dotenv_path=env_path)
+# env_path = Path('.'), / '.env'
+# load_dotenv(dotenv_path=env_path)
 
 app = Flask(__name__)
 slack_event_adapter = SlackEventAdapter(
