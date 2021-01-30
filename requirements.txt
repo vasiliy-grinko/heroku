@@ -7,7 +7,8 @@ click
 cryptography    
 Flask           
 idna             
-itsdangerous     
+itsdangerous   
+python-dotenv 
 Jinja2           
 MarkupSafe       
 multidict      
