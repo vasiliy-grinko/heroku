@@ -74,8 +74,7 @@ def message_count():
     return Response(), 200
 
 if __name__ == '__main__':
-    port = int(os.getenv('PORT', 3000))
-    app.run(debug=False, port=port)
+    app.run(debug=True)
 # if __name__ == "__main__":
 #        app.start(port=int(os.environ.get("PORT", 3000)))
 #     port = int(os.getenv('PORT', 3000))
