@@ -1,7 +1,11 @@
 import os
 from slack_bolt import App
+from pathlib import Path
+from dotenv import load_dotenv
 
-# Initializes your app with your bot token and signing secret
+ env_path = Path('.') / '.env'
+ load_dotenv(dotenv_path=env_path)
+ Initializes your app with your bot token and signing secret
 app = App(
     token=os.environ.get("SLACK_BOT_TOKEN"),
     signing_secret=os.environ.get("SLACK_SIGNING_SECRET")
